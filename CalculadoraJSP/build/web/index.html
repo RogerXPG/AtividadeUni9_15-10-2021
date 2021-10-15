@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>CalculadoraJSP</h1>
+        <hr>
+        
+        <form method="post" action="calcula.jsp">
+            Informe o valor A:
+            <input type="number" step="0.01" placeholder="Ex. 10" name="vA" required>
+            <br>
+            
+            Informe o valor B:
+            <input type="number" step="0.01" placeholder="Ex. 20.5" name="vB" required>
+            <br>
+            
+            <input type="radio" value="somar" name="operacao">Somar
+            <input type="radio" value="subtrair" name="operacao">Subtrair
+            <input type="radio" value="multiplicar" name="operacao">Multiplicar
+            <input type="radio" value="dividir" name="operacao">Dividir
+            
+            <br>
+            <input type="submit" value="Calcular">
+        </form>
+      </body>
+</html>
